@@ -56,23 +56,11 @@
 				letter-spacing: 1px;
 				position: relative;
 			}
-			em {
-				font-style: normal;
-				letter-spacing: 2px;
-				font-size: 80%;
+			.scrolls.sign em {
+				display: none;
 			}
-			i {
-				font-size: 60%;
-			}
-			strong {
-				font-variant: small-caps;
-				letter-spacing: 4.5px;
-			}
-			.scrolls.labels strong {
-				letter-spacing: 5px;
-			}
-			.scrolls.sign strong {
-				letter-spacing: 20px;
+			.scrolls.sign mark {
+				background: none;
 			}
 			article
 			{
@@ -252,6 +240,12 @@
 				display:block;
 				font-weight: bolder;
 			}
+			em {
+				font-style: normal;
+			}
+			mark {
+				display: none;
+			}
 			section {
 			}
 			section.cover
@@ -340,7 +334,7 @@
 </head>
 <body>
 <pre>
-Talk to the Salt: Little Reminders That You Are the Gift
+Talk to the Salt Cave: Little Reminders That You Are the Gift
 
 ---
 
@@ -388,7 +382,7 @@ Glowing yet grounding ancient stone,
 
 Still giving at 600,000,000 years old:
 
-Talk to the Salt & hear what it holds.
+<em>Talk to the Salt Cave for all it holds.</em><mark>So take one, breathe, and then unroll.</mark>
 
 
 
@@ -448,6 +442,14 @@ The Old Sage Stone has a message...
 
 
 
+Your presence has not gone unnoticed
+
+By one who has held a timeless focus:
+
+The Elder Stone asks for a moment...
+
+
+
 Let this remind you - You are the treasure,
 
 With a way of being that's beyond measure.
@@ -472,9 +474,9 @@ You are the gift - your life is a loving glow.
 
 
 
-Dearest beloved, this can no longer wait
+Dearest Beloved, this can no longer wait
 
-Or just be left up to the timing of fate:
+Or simply be left to the timing of fate:
 
 You are the gift - the process of great.
 
@@ -501,6 +503,14 @@ Whether or not you needed a little lift,
 Or something to name your latest shift,
 
 Let this remind you: You are the gift.
+
+
+
+Regardless of where your mind is at,
+
+Or whether you recall this one fact:
+
+You are a true gift, and that is that.
 
 
 
@@ -16464,11 +16474,11 @@ Go where they hear your words.
 
 
 
-To some, this may sound rotten:
+Backstories eventually get forgotten,
 
-History eventually gets forgotten,
+Or at least not fully retold very often.
 
-Or at least not retold very often.
+Your fresh presence turns them rotten.
 
 
 
@@ -24574,10 +24584,131 @@ Are you focusing on being seen?
 Or doing exactly what you mean?
 
 Or somewhere right in between?
+
+
+
+When you focus on what matters,
+
+Useless thoughts swiftly scatter
+
+As your best intentions gather.
+
+
+
+Rather than plan, do this instead:
+
+Dream. Dare to imagine far ahead
+
+To feel into how this could spread.
+
+
+
+Once again, here is what you can deduce:
+
+No one needs the things you can produce.
+
+Show them and you what can be cut loose.
+
+
+
+This is not about your legacy.
+
+Feel into your actual identity.
+
+Drop longevity for integrity.
+
+
+
+Why not just let it all be known?
+
+Why not let everything be shown?
+
+Why do you consider it your own?
+
+
+
+Is this how you treat your light?
+
+Do you just reflect what's inside?
+
+Or let it shine by stepping aside?
+
+
+
+Spend due time with the sorrow;
+
+Spend the present, never borrow
+
+- Joy rightfully owns tomorrow.
+
+
+
+There is no point looking that far ahead,
+
+So leave the rest of those plans unsaid.
+
+Focus on every way you can feel instead.
+
+
+
+Thinking comes long after every feeling;
+
+So whatever thoughts have you believing,
+
+Trust what your emotions are revealing.
+
+
+
+People who recognize and respect your voice
+
+Are people who should be your first choice.
+
+Reliability is what you can use at this point.
+
+
+
+No ideas but your own are to be allowed.
+
+Think them up until you tire yourself out,
+
+Then sit for just as long without a sound.
+
+
+
+You're reaching the end of this path.
+
+How long would you like that to last?
+
+The next is without maps or forecast.
+
+
+
+Regardless of what is up for sale,
+
+Whatever is packaged grows stale.
+
+Be where you can breathe: exhale.
+
+
+
+Your mind was not made for this -
+
+For juggling every task life gives:
+
+It takes so much less to fully live.
+
+
+
+Difficulty and discomfort both know,
+
+As does the best life has yet to show -
+
+The key has always been to just flow.
 </pre>
 </body> 
 <script type="text/javascript">
-	const cave = [
+  var $ = (function () {
+  	const cave = [
 		{
 			"stone" : 2,
 			"name" : "Grandmother",
@@ -24612,11 +24743,15 @@ Or somewhere right in between?
 			"stone" : 8,
 			"name" : "Old Sage",
 			"url"	: "https://lh3.googleusercontent.com/HSDsds5N4EVCCQepZAJjJKijkCVXtXj_zWrZlA_kZDF9DGIBHQd_ZZhAUYmOpr5N1WeRzX3XNFNp_l4KEF88UnmX9BZxZeELaytjlKrc3Gz2BxG7u0rxmGXiBrDRq6yk5Iho_s7DE3XR_Wde9mws3AJ7mp6ftaxPjVFFwrN08hU20hQvzV1xxtygJkVRapSlr1rwbIcbjhZD7kk2UPyvaga8LdqP92GVfm8NbYNHL7bboG4Xw-K-ppDbZYWCEM_vvNNJqoxOSAsn5pef9v8RnBK8TqZJTvDoUgeJHn2YF8ILUyOYd-RTK02mYaD_DOuLfUyQO6afopP8a61RIPWQ2IsfmdtYlwz6uNOg49jwHJNVQ--DR3ztR1pmujs46d5DQksWyGMCyyiS3G61dVwT7BBHkBZMFjpdZYfChJpI40dw3BoU7sDCh3qlfzX5kK_PyyPexfMk-iNb_HsKVP0U_4X1V2nDPf9E-lkQ3YbmuRRjaCG3m9OqXm-Q1jIUOSQmXo8tIdAvtbeme-HupMB5EEpskQw7jZbkr-UvPzRCypIefpIA-qpGgKDY13AoUE9oZA1QvvUSTqVuIDoekItrE9KYNN8NtjJzTl1pVwIs28UZ0pU0Xq6Rqxk7wG3yU4R46fuAzEEA_LBi8l-3SkiRtDEDBqhsDHGA6q_gi8gZlf2uWufg8WhpwA=w2102-h1576-no"
+		},
+		{
+			"stone" : 9,
+			"name" : "Elder",
+			"url"	: "https://lh3.googleusercontent.com/HSDsds5N4EVCCQepZAJjJKijkCVXtXj_zWrZlA_kZDF9DGIBHQd_ZZhAUYmOpr5N1WeRzX3XNFNp_l4KEF88UnmX9BZxZeELaytjlKrc3Gz2BxG7u0rxmGXiBrDRq6yk5Iho_s7DE3XR_Wde9mws3AJ7mp6ftaxPjVFFwrN08hU20hQvzV1xxtygJkVRapSlr1rwbIcbjhZD7kk2UPyvaga8LdqP92GVfm8NbYNHL7bboG4Xw-K-ppDbZYWCEM_vvNNJqoxOSAsn5pef9v8RnBK8TqZJTvDoUgeJHn2YF8ILUyOYd-RTK02mYaD_DOuLfUyQO6afopP8a61RIPWQ2IsfmdtYlwz6uNOg49jwHJNVQ--DR3ztR1pmujs46d5DQksWyGMCyyiS3G61dVwT7BBHkBZMFjpdZYfChJpI40dw3BoU7sDCh3qlfzX5kK_PyyPexfMk-iNb_HsKVP0U_4X1V2nDPf9E-lkQ3YbmuRRjaCG3m9OqXm-Q1jIUOSQmXo8tIdAvtbeme-HupMB5EEpskQw7jZbkr-UvPzRCypIefpIA-qpGgKDY13AoUE9oZA1QvvUSTqVuIDoekItrE9KYNN8NtjJzTl1pVwIs28UZ0pU0Xq6Rqxk7wG3yU4R46fuAzEEA_LBi8l-3SkiRtDEDBqhsDHGA6q_gi8gZlf2uWufg8WhpwA=w2102-h1576-no"
 		}
-
 	];
-	const modes = ['~', 'all', 'art', 'book', 'sign'];
-	const startAt = 9;
+	const modes = ['~', 'all', 'art', 'book', 'labels', 'event', 'sign'];
+	const startAt = 18;
 
 	var stones = [];
 	var wisdom, words,
@@ -24645,24 +24780,29 @@ Or somewhere right in between?
 					return next.pop();
 		}),
 		journey : (function () {
-					var fate = Math.floor(Math.random() * (wisdom.length-startAt)) + startAt;
+					var fate;
 					//var stone = Math.ceil(Math.random() * (startAt - 3)) + 1;
 					var hash = Number((location.hash).substring(1)) || location.hash;
-
-					if (hash < startAt && hash > 1) {
-						hash = fate;
-					} else if (hash === 1 || hash > (startAt - 1)) {
-						var stone = my.stone();
-						hash = stone['stone'];
-						document.body.style.setProperty('--stone', 'url("' + stone['url'] + '")');						
-					} else {
-						hash = location.hash || 1;
+              
+					while (!fate || fate < startAt) {
+						fate = Math.floor(Math.random() * (wisdom.length-startAt)) + startAt;
 					}
 
-					window.location.hash = hash;
-					wisdom[0] = wisdom[hash];
+					var stone = my.stone();
+					document.body.style.setProperty('--stone', 'url("' + stone['url'] + '")');						
 
+					if (!window.location.hash) {
+						cover = wisdom[fate];
+						window.location.hash = '#' + fate;
+					} else {
+						hash = location.hash ? Number((location.hash).substring(1)) : null;
+						cover = (hash && (startAt-2) < hash && hash < wisdom.length) ? wisdom[hash] : wisdom[fate];
+						if ((hash < (startAt-1) || hash > wisdom.length)) {window.location.hash = '#' + fate;}
+					}
+					
+					wisdom.unshift(cover);
 					return wisdom;
+
 				}),
 		jar : (function () {
 					var book = [], toURL = '', hash, hasDates, isType = '', isBack = '',
@@ -24679,7 +24819,7 @@ Or somewhere right in between?
 
 					for (scroll = 0; scroll < thisSide.length; scroll++) {
 						suffix = "<sup>" + (parseInt(scroll) - 1) + "</sup>";
-						pages.push('<a onclick="my.jar()"><article><div><p>' + thisSide[scroll] + suffix + '</p></div></article></a>');
+						pages.push('<a href="' + toURL + '"><article><div><p>' + thisSide[scroll] + suffix + '</p></div></article></a>');
 						book.push('<p class="book">' + thisSide[scroll].replace(/<br \/><br \/>/gi, '<br />') + '</p><br /><br />');
 						if (isType === '') {break;}
 					}
@@ -24689,6 +24829,14 @@ Or somewhere right in between?
 						switch (isType) {
 							case 'sign' :
 								scrolls = "<section class='scrolls sign'>" + pages[1] + pages[1] + "</section>";
+								break;	
+							case 'event' :
+								pages = pages.slice(2,10);
+								scrolls = "<section class='scrolls'>" + pages.join("") + pages.join("") + "</section>";
+								break;	
+							case 'labels' :
+								pages = pages.slice(10,18);
+								scrolls = "<section class='scrolls'>" + pages.join("") + pages.join("") + "</section>";
 								break;	
 							case 'all' :
 								pages = pages.slice(startAt).reverse()
@@ -24721,10 +24869,9 @@ Or somewhere right in between?
 
 					document.body.innerHTML = scrolls;
 					setTimeout(function () {window.scrollTo(0,1);},1);
-				})
-	};
-
-	my.jar();
-
+            })
+      };
+    my.jar();
+  }());
 </script>
 </html>
