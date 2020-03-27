@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Talk to the Salt Cave</title>
+	<title>Journey of 1,000 Breaths</title>
     <meta charset="ASCII">
     <meta http-equiv="content-type" content="text/html; charset=ASCII">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<meta name="application-name" content="Talk to the Salt Cave">
+	<meta name="application-name" content="Journey of 1,000 Breaths">
 	<meta name="author" content="Daryl Browne">
    	<meta name="description" content="A collection of words of wisdom written by Daryl Browne">
 	<meta name="generator" content="Sublime Text">
 	<meta name="keywords" content="Daryl Browne">
    	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<meta name="DC.Title" content="Talk to the Salt Cave">
+	<meta name="DC.Title" content="Journey of 1,000 Breaths">
 	<meta name="DC.Creator" content="Daryl Browne">
-	<meta name="DC.Subject" content="Talk to the Salt Cave by Daryl Browne">
-	<meta name="DC.Description" content="Talk to the Salt Cave is a collection of mindful messages by Daryl Browne">
+	<meta name="DC.Subject" content="Journey of 1,000 Breaths by Daryl Browne">
+	<meta name="DC.Description" content="Journey of 1,000 Breaths is a collection of mindful messages by Daryl Browne">
 	<meta name="DC.Date" content="2019-3-12">
 	<meta name="DC.Type" content="Text">
 	<meta name="DC.Format" content="99 kB">
 	<meta name="DC.Language" content="en">
-	<meta property="og:title" content="Talk to the Salt Cave" />
-	<meta property="og:description" content="Talk to the Salt Cave is a collection of mindful messages by Daryl Browne" /><!--
+	<meta property="og:title" content="Journey of 1,000 Breaths" />
+	<meta property="og:description" content="Journey of 1,000 Breaths is a collection of mindful messages by Daryl Browne" /><!--
 	<meta property="og:image" content="http://darylbrowne.com/images/be-icon.png" />
 	<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
 	<link rel="DC.Identifier" href="http://darylbrowne.com">
@@ -34,6 +34,7 @@
 		:root {
 			--stone : url("https://lh3.googleusercontent.com/oiq2vD7r0MCgU-brAdN58ZzVa4hC88InengCeXX0KO_l3DuCXiXIM9xyzDXVJrxIJUxPROivBOyHrrvjtp9duCA31uK13n76RzSOyUldhSRY0dmq65yi5vhmrqTeJ_r1C0Ctc_xF6Dcj3Bgs3KU7bY4rVPcZBlpyk5iLW6M_opOE3zg_ABKCoQvO5lbq_uKT_dvmPINag2DBVEja9JKxijdfJcf2jfKPlo-_Y5SHSYTq0F348TncBzRSQKBt70YmK0iE-vpiS38hDO2fUAJPHAZNUnoFPjIiHqkudLTn_veFUA0aqL7zMXQ3YZoyJXuxTyq7BbQoAaYVXbhJb5hufOzE506DmXj8bcW-mu-y9QB3g49zNsDWiRyMBGmoSkAK6-zjKIz540e54PcHX1L1WcETu94-23t8NymzS5DpnLfyHHl9uL8eEPUjJy8tSuzKmVanGJ50KrdDcCTY_s5_jSdcYKAorbxRt9qwR7-h7Rh66nky_GFbbU50Xk8-ltKw_Yb-V1cR5hdHna741j7hhX6X4-AKTF-tJj_CTJ49uAjeV8y5gubdLZugacvbav112sa5g0GRu5CGGxXw72ZTZw8ET1qmzTqNbsiJdvY0TKtpEk-nRQOMiMRIbUbjFKjxOhm6wg9Pqmo-wfUKNJM6cum7No5tJYZFEOKABa_hsyA42GSafJBtAw=w2102-h1576-no");
 		}
+
 		@media all {
 
 			@page {size : portrait;}
@@ -55,12 +56,6 @@
 				font-size: 65%;
 				letter-spacing: 1px;
 				position: relative;
-			}
-			.scrolls.sign em {
-				display: none;
-			}
-			.scrolls.sign mark {
-				background: none;
 			}
 			article
 			{
@@ -221,16 +216,31 @@
 				text-align : center;
 				font-family: 'IM Fell English', Oronteus Finaeus, serif;
 				font-size: 4vw;
-				overflow: hidden;
-				background-color: #111;
-				background-repeat: no-repeat;
-				background-position: center top;
-				background-image: var(--stone);
-				background-size: cover;
+				background: #111;
 		    }
-		    body, p
-		    {
-		    }
+		@-webkit-keyframes message {
+		  0%,20%,75%,100% { opacity: 0; }
+		  50%,65% { opacity: 1; }
+		}
+
+		@keyframes message {
+		  0%,20%,75%,100% { opacity: 0; }
+		  50%,65% { opacity: 1; }
+		}
+
+		@-webkit-keyframes interlude {
+		  0%,100% { opacity: 0; }
+		  20%,80% { opacity: .75; }
+		}
+
+		@keyframes interlude {
+		  0%,100% { opacity: 0; }
+		  20%,80% { opacity: .75; }
+		}
+			p {
+			    -webkit-animation: message 30s ease infinite;
+			    animation: message 30s ease infinite;				
+			}
 			a, a:focus, a:hover, a:visited
 			{
 				color: #f7be84;
@@ -240,13 +250,20 @@
 				display:block;
 				font-weight: bolder;
 			}
-			em {
-				font-style: normal;
-			}
-			mark {
-				display: none;
-			}
-			section {
+			div.bg {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				overflow: hidden;
+				background-color: #111;
+				background-repeat: no-repeat;
+				background-position: center top;
+				background-image: var(--stone);
+				background-size: cover;
+			    -webkit-animation: interlude 30s ease infinite;
+			    animation: interlude 30s ease infinite;				
 			}
 			section.cover
 			{
@@ -260,25 +277,16 @@
 			    justify-content: center;
 			    -webkit-align-items: center;
 			    align-items: center;
-	            -webkit-animation-duration: 7s;
-	            animation-duration: 7s;
-	            -webkit-animation-fill-mode: both;
-	            animation-fill-mode: both;			    
-			}
-	        @-webkit-keyframes fadeIn {
-	        	0% {opacity: 0;}
-	        	100% {opacity: 1;}
-	        }
-	         
-	        @keyframes fadeIn {
-	        	0% {opacity: 0;}
-	        	100% {opacity: 1;}
-	        }
-	         
-	        .fadeIn {
-	        	-webkit-animation-name: fadeIn;
-	        	animation-name: fadeIn;
-	        }		
+				overflow: hidden;
+				overflow: hidden;
+				background-color: #111;
+				background-repeat: no-repeat;
+				background-position: center top;
+				background-image: var(--stone);
+				background-size: cover;
+			    -webkit-animation: interlude 30s ease infinite;
+			    animation: interlude 30s ease infinite;	
+			 }	         
 			section article {
 				width: 100%;
 				height: auto;
@@ -334,15 +342,23 @@
 </head>
 <body>
 <pre>
-Talk to the Salt Cave: Little Reminders That You Are the Gift
+Until you make it back in again,
+
+Enjoy this virtual salt cave Zen:
+
+Your Journey of 1,000 Breaths...
+
+
+
+Journey of 1,000 Breaths: Little Reminders That You Are the Gift
 
 ---
 
-You don't read this book from front to back.
+You don't read this book from front to back;
 
-You close your eyes, pick a page and after that,
+You let fate find you a page - and after that, 
 
-You meet with what your thoughts attract.
+You read the message your thoughts attract.
 
 ---
 
@@ -376,13 +392,37 @@ I believe everywhere we go, we're needed.
 
 I believe everyone we meet will teach us.
 
+---
 
+Perhaps I should explain why I write these.
+
+I only know I do so from a feeling of ease -
+
+A feeling that there's no one here to please.
+
+---
+
+Close your eyes, pick a page and after that,
+
+Open them to wherever your thumb is at:
+
+See if it answers the question you asked.
+
+---
+
+We're letting all of this remind us to play:
+
+Here or at home, you can always just say...
+
+&ldquo;Hey Google, Talk to Daryl About Today.&rdquo;
+
+---
 
 Glowing yet grounding ancient stone,
 
 Still giving at 600,000,000 years old:
 
-<em>Talk to the Salt Cave for all it holds.</em><mark>So take one, breathe, and then unroll.</mark>
+Talk to the Salt Cave for all it holds.
 
 
 
@@ -1214,7 +1254,7 @@ How deep inside your precious home
 
 Do you let someone you don't know?
 
-Doesn't that mean you should tell them no?
+It might be time to ask them to go.
 
 
 
@@ -1551,14 +1591,6 @@ Just tell all of them to wait,
 Just let yourself arrive late,
 
 Just be here and appreciate.
-
-
-
-In the face of the upcoming unknown,
-
-Know coincidences can help you grow
-
-As you let what is to be simply unroll.
 
 
 
@@ -3854,7 +3886,7 @@ You're going to be relearning as you go,
 
 Because of the gradual way life unrolls:
 
-You do and do and then deeply know.
+You do, and do, and then deeply know.
 
 
 
@@ -6898,11 +6930,11 @@ From ruining your well-deserved delight.
 
 
 
-Keep your wants few and your needs pure
+Despite distractions' attempts to lure,
 
-To be free from endless hunger for more
+Whether you seek or find, do be sure
 
-See if of this fact they are even sure;
+To keep your desires few - and pure.
 
 
 
@@ -12082,11 +12114,11 @@ Of what? Answering is your next chore.
 
 
 
-Wherever your hand goes in conversation
+Which words do you use in a conversation?
 
-Points toward where you keep hesitation:
+Are they ones that are used for persuasion
 
-Focus your inner work on this location.
+Or that acknowledge your inner location?
 
 
 
@@ -15426,9 +15458,9 @@ Decide before things get too intertwined.
 
 
 
-All you need is one little suspicion
+That is why you're in this position:
 
-To get your heart to use its vision,
+To get your heart to share a vision,
 
 And your mind to make a decision.
 
@@ -18582,7 +18614,7 @@ Where there is nervousness there is what?
 
 What can those doubts help you dream of?
 
-When is it time to be nervous about love?
+Nothing. Relax and dream of what you love. 
 
 
 
@@ -24707,7 +24739,7 @@ The key has always been to just flow.
 
 
 
-When you love it so much...then why not?
+When you love it so much... then why not?
 
 Why bother giving time another thought?
 
@@ -24736,6 +24768,462 @@ The situation calls for a different persona,
 A version of you you've not met or known,
 
 Who can easily handle what's been shown.
+
+
+
+Since your quest is going to go on awhile,
+
+You may as well make the journey in style
+
+By taking on a task that makes you smile.
+
+
+
+Looking back, you may say, "Of course!"
+
+But from here, you may ask, "Am I sure?"
+
+Self-reflection is your priceless resource.
+
+
+
+Who are you doing this for... honestly?
+
+Why do you continue on so constantly?
+
+How much are you doing consciously?
+
+
+
+Swimming in goals can seem more appealing
+
+Than diving down into your deepest feeling:
+
+So which will it be - reaching or revealing?
+
+
+
+As you begin to get everything sorted,
+
+It will be clear what're more important
+
+And also where you feel most supported.
+
+
+
+The chance to strive is always available.
+
+But how long is your striving bearable?
+
+Your self-appreciation is unassailable.
+
+
+
+Habitual thinking limits clear thought
+
+By cramming what is into what ought.
+
+What fresh ideas has the day brought?
+
+
+
+Is it the real or just a reflection?
+
+Is it apparent or just a perception?
+
+Is it impactful or just an impression?
+
+
+
+Are there a few more questions to ask
+
+So you can feel you have a firm grasp
+
+On what is behind this ongoing task?
+
+
+
+If you take your thoughts too seriously,
+
+They'll turn around and start ransoming
+
+Time for control: stay fiercely carefree.
+
+
+
+Whether it happened or not, 
+
+It's used up enough thought:
+
+Move on to what you've got.
+
+
+
+Pouring too much of yourself into this
+
+May be putting too much into the mix:
+
+To be clear, you may need to be swift.
+
+
+
+Solve no problems except your own.
+
+Let none of your flaws go unknown
+
+As you go inwardly, honest and bold.
+
+
+
+Whenever your thoughts get too intricate,
+
+There's another approach more legitimate
+
+That focuses on increment by increment.
+
+
+
+For wherever your inner fog is thick,
+
+Your old approach may be too quick.
+
+Revisit your process: that's the trick.
+
+
+
+Imagine succeeding at that whole thing.
+
+What deep satisfaction would that bring?
+
+None? Then to what do you still cling?
+
+
+
+If you can do so lightly, then go ahead.
+
+If not, go and do another thing instead.
+
+Do things lightly and your heart is fed.
+
+
+
+Are you making that more complicated?
+
+Are these your strengths being activated?
+
+Are you aware of what's being cultivated?
+
+
+
+When you improve things little by little,
+
+You bind together what apart was brittle:
+
+The solution isn't easy, but it is simple.
+
+
+
+If there are too many steps required,
+
+In the details you'll soon get mired.
+
+Simplicity is where to get inspired.
+
+
+
+If you find yourself managing a process,
+
+Ask yourself whether you feel as blessed
+
+As when you are doing far more or less.
+
+
+
+One approach truly matches your vibration,
+
+While another just causes more frustration:
+
+Pick the one that goes on daily explorations.
+
+
+
+You're certainly allowed to complain,
+
+But if the day is all that has changed,
+
+Your thoughts desire to be retrained.
+
+
+
+If they're showing you unpleasant aspects,
+
+Consider what's in you that that reflects -
+
+And then feel each feeling you feel next.
+
+
+
+For as long as you want labels, have them.
+
+But beware what they praise or condemn.
+
+There are no labels in what you've dreamt.
+
+
+
+To feel fulfilled or simply blessed,
+
+Pick between presence or a process:
+
+You can take the way that feels best.
+
+
+
+If you unconsciously do as you're advised,
+
+You may betray instinct to go do otherwise:
+
+When do intutition and a moment coincide?
+
+
+
+This time, be strong by being gentle.
+
+The journey is energetic, not mental.
+
+So an ease that channels is essential.
+
+
+
+Until you find one who can fully relate,
+
+Perhaps you should use this time to wait
+
+Or to continue to quietly concentrate.
+
+
+
+Sit with the urge to share this just yet.
+
+Sit and notice what realizations you get
+
+When you sit without needs being met.
+
+
+
+That may not be what they're up to.
+
+Don't just ask - consciously review
+
+Whether or not this can continue.
+
+
+
+This next decision calls for courage -
+
+To face the feelings that may stir up,
+
+And to know you do this out of love.
+
+
+
+Even if your delivery is deemed rough,
+
+There is a time to say that was enough.
+
+So you can clear all unnecessary stuff.
+
+
+
+Where there are leaders, followers form.
+
+Where there are levels, there is a norm -
+
+Where you find being, presence is born.
+
+
+
+It is alright to let harsh words bubble up
+
+In the presence of someone you can trust
+
+To say, "Alright already, that's enough."
+
+
+
+Do you know when you are at your best?
+
+Then avoid the hours that feel like a test
+
+And use that time instead to simply rest.
+
+
+
+Your best ideas come wrapped in an emotion,
+
+So feel all that surrounds your latest notion
+
+Before you choose to give it your devotion.
+
+
+
+Beyond the words for it, how does it feel?
+
+Beyond any terminology or trendy appeal,
+
+Can you enjoy what one moment reveals?
+
+
+
+There is no point giving any of this a name.
+
+As fluid as everything is, you are the same.
+
+The only constant thing in you is Change.
+
+
+
+Without giving it the words, let it speak.
+
+Don't assume its purpose is to just teach:
+
+Does it tell of something you can reach?
+
+
+
+Go in together, or else not at all,
+
+So neither will suffer a lone fall,
+
+And you both become invincible.
+
+
+
+Whether it is what you normally allow,
+
+Or you feel as if you barely know how,
+
+Speak in a way that speaks to you now.
+
+
+
+Take a moment to look so far up the road
+
+That you barely recognize it as your own
+
+Then use this perspective to pack and go.
+
+
+
+All that you have, and have done, is good.
+
+But you can do less - and yes, you should
+
+By doing all you can - not all you could.
+
+
+
+Shed thoughts of doing it right or wrong:
+
+Whether or not your instincts felt strong,
+
+You've been doing this perfectly all along.
+
+
+
+Go, whether you get invited there or not.
+
+Go because a voice within says you ought.
+
+Go without a battle needing to be fought.
+
+
+
+Just sit and listen to everything going on.
+
+Quietly take in what's been here all along.
+
+Simply and sincerely listen: don't respond.
+
+
+
+There's a good reason that mattered to you -
+
+Your core values are trying to break through:
+
+So follow them to what they already pursue.
+
+
+
+Even if you prefer not using your power,
+
+Your life journeys, both inner and outer,
+
+Can benefit from you being a bit louder.
+
+
+
+As much a matter of timing as of trust -
+
+You came here to abound, not to adjust:
+
+Shed what you can, keep what you must.
+
+
+
+Even a fancy invitation to get riled up
+
+Still isn't valid or interesting enough
+
+To step outside the light of self-love.
+
+
+
+Even if you lack proper proof to go on,
+
+Your can keep your inner vision strong:
+
+Thank your patience for lasting so long.
+
+
+
+It's not in any information you'll find.
+
+Knowing doesn't happen in your mind.
+
+Thoughts tell tales (feelings never lie).
+
+
+
+You may think it's good enough like this,
+
+But that relaxed attitude doesn't quite fit:
+
+Now's the time to wholeheartedly commit.
+
+
+
+Ask, if you need anything repeated.
+
+Ignore how the question is treated.
+
+Do it to get everything completed.
+
+
+
+Give things your own special meaning
+
+By making a milestone of your reason:
+
+Keep following your favorite feeling.
+
+
+
+In the face of the upcoming unknown,
+
+You are actually being invited to grow
+
+As you let what is to be, simply unroll.
 </pre>
 </body> 
 <script type="text/javascript">
@@ -24785,6 +25273,7 @@ Who can easily handle what's been shown.
 	const modes = ['~', 'all', 'art', 'book', 'labels', 'event', 'sign'];
 	const startAt = 18;
 
+	var local = false;
 	var stones = [];
 	var wisdom, words,
 		ln = '<br />',
@@ -24811,28 +25300,32 @@ Who can easily handle what's been shown.
 					var next = my.shuffle(stones);
 					return next.pop();
 		}),
-		journey : (function () {
-					var fate;
-					//var stone = Math.ceil(Math.random() * (startAt - 3)) + 1;
+		journey : (function (inner) {
+					console.log('my.journey(' + inner + ')');
+					var fate, message;
 					var hash = Number((location.hash).substring(1)) || location.hash;
-              
-					while (!fate || fate < startAt) {
-						fate = Math.floor(Math.random() * (wisdom.length-startAt)) + startAt;
-					}
-
 					var stone = my.stone();
 					document.body.style.setProperty('--stone', 'url("' + stone['url'] + '")');						
 
-					if (!window.location.hash) {
-						cover = wisdom[fate];
-						window.location.hash = '#' + fate;
-					} else {
-						hash = location.hash ? Number((location.hash).substring(1)) : null;
-						cover = (hash && (startAt-2) < hash && hash < wisdom.length) ? wisdom[hash] : wisdom[fate];
-						if ((hash < (startAt-1) || hash > wisdom.length)) {window.location.hash = '#' + fate;}
+					while (!fate || fate < startAt) {
+						fate = Math.floor(Math.random() * (wisdom.length-startAt)) + startAt;
 					}
 					
-					wisdom.unshift(cover);
+					console.log('my.journey(' + inner + ') hash = ' + hash);
+
+					if (!hash && !inner) {
+						console.log('my.journey(' + inner + ') !hash');
+						setInterval(my.journey,30000,true);
+					} else if (!isNaN(hash) && !inner) {
+						console.log('my.journey(' + inner + ') hash = ' + hash);
+						message = (hash && (startAt-2) < hash && hash < wisdom.length) ? wisdom[hash] : wisdom[fate];
+						if ((hash < (startAt-1) || hash > wisdom.length)) {window.location.hash = '#' + fate;}
+						document.getElementsByTagName('p')[0].innerHTML = message;
+					} else if (inner) {
+						window.location.hash = '#' + fate;
+						document.getElementsByTagName('p')[0].innerHTML = wisdom[fate];
+					}
+
 					return wisdom;
 
 				}),
@@ -24879,7 +25372,7 @@ Who can easily handle what's been shown.
 								var perchapter = 100;
 								var totalpages = pages.length / perchapter;
 								var custom = my.shuffle(book.slice(startAt));
-								var preface = (book.slice(1,startAt)).join("") + '<br /><br /><br /><br /><br /><br />'; 
+								var preface = (book.slice(0,startAt)).join("") + '<br /><br /><br /><br /><br /><br />'; 
 								for (i = 1; i < totalpages+1; i++) {
 									chapterTitle = '<br /><br /><br /><br /><br /><br />'; 
 									custom.splice((perchapter*i)+(i-1),0,chapterTitle);
@@ -24895,8 +25388,9 @@ Who can easily handle what's been shown.
 						}
 
 					} else {
+						console.log(pages);
 						one = Math.min(Math.abs(Number(isType.substring(1))),pages.length-1) || 0;
-						scrolls = "<section class='scrolls cover fadeIn'>" + pages[one] + "</section>";		
+						scrolls = "<section class='scrolls cover'>" + pages[one] + "</section>";
 					}
 
 					document.body.innerHTML = scrolls;
